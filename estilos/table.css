@@ -1,0 +1,55 @@
+.barra-opciones{
+    display: none;
+}
+.opciones{
+    display: block;
+}
+.ul-opciones{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.ul-opciones a{
+text-decoration: none;
+border-right: 1px solid #000;
+}
+.il-opciones{
+padding: 5px;
+border-bottom: none;
+font-size: 2rem;
+}
+.il-opciones:hover{
+font-size: 2.2rem;
+}
+#cerrarMenu-opciones{
+display: none;
+}
+
+
+
+
+
+.contenedor_imagenes-sectionMuestrario{
+    height: 300px;
+}
+.contenedorIndividual_imagnes-sectionMuestrario{
+    padding: 25px;
+}
+.img-secionEscogerImagen{
+    width: 40%;
+}
+.img-sectionMuestrario{
+    width: 70%;
+}
+.titulo-sectionMuestrario{
+    font-size: 2.6rem;
+    margin-top: 70px;
+}
+.titulo-sectionUno, .titulo-sectionDos, .titulo-sectionTres{
+    font-size: 2.6rem;
+}

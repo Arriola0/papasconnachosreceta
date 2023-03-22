@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+.barra-opciones{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #EA6E86;
+    padding: 10px;
+    z-index: 100;
+}
+.barra-opciones div{
+    color: #fff;
+}
+.icono-opciones{
+    height: 100%;
+}
+.opciones{
+display: none;
+}
+.ul-opciones{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgb(158, 157, 157) 5px 5px 15px;
+    background: #EA6E86;
+    z-index: 50;
+}
+.ul-opciones a{
+    text-decoration: none;
+}
+.il-opciones{
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #fff;
+    font-size: 1.8rem;
+    color: #fff;
+    transition: font-size font-weight 3s;
+}
+.il-opciones:hover{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.section-muestrario{
+    width: 100%;
+}
+.titulo-sectionMuestrario{
+    width: 80%;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor-sectionMuestrario{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: rgba(150, 150, 150) 5px 5px 20px;
+}
+.contenedor_imagenes-sectionMuestrario{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedorIndividual_imagnes-sectionMuestrario{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+.img-sectionMuestrario{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.sectionEscogerImagen{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    box-shadow: rgba(150, 150, 150) 5px 5px 20px;
+}
+.contenedorIndividual_imagenes-secitionEscogerImagen{
+    width: 33.33%;
+    text-align: center;
+    box-shadow: rgba(150, 150, 150) 5px 5px 20px;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+.img-secionEscogerImagen{
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.contenedorIndividual_imagenes-secitionEscogerImagen:hover{
+    background: rgb(158, 157, 157);
+}
+
+.titulo-sectionUno, .titulo-sectionDos, .titulo-sectionTres{
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.articulo-sectionUno{
+    text-align: justify;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+.sectionUno, .sectionDos, .sectionTres{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    background: #EAAFD5;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+.ingredientes-sectionDos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+.img-sectionDos{
+    width: 100%;
+    height: auto;
+}
+.hijos-ingredientes-sectionDos{
+    position: relative;
+}
+.infoIngredientes-sectionDos{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    top: 30px;
+    padding: 10px;
+    background: #EA6E81;
+    border-radius: 5px;
+    right: 10px;
+    border: 1px solid #FC2121;
+}
+.infoIngredienteUno-sectionDos{
+    z-index: 20;
+    display: none;
+}
+.infoIngredienteDos-sectionDos{
+    display: none;
+    z-index: 10;
+}
+.infoIngredienteTres-sectionDos{
+    z-index: 10;
+    display: none;
+}
+.infoIngredienteCuatro-sectionDos{
+    display: none;
+}
+.infoIngredienteCinco-sectionDos{
+    display: none;
+    z-index: 10;
+}
+.titulosIngredientes-sectionDos{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.parrafosIngredientes-sectionDos{
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.btnCerrarIngrediente{
+    width: auto;
+    background: #0008;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btnVerinfoIngredienteUno, .btnVerinfoIngredienteDos, .btnVerinfoIngredienteTres, .btnVerinfoIngredienteCuatro, .btnVerinfoIngredienteCisco{
+    position: absolute;
+    top: 70%;
+    width: 90%;
+    background: #EA6E81;
+    right: 10px;
+    padding: 10px;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: font-size, color, font-wight, 1s;
+}
+.btnVerinfoIngredienteUno:hover,.btnVerinfoIngredienteDos:hover, .btnVerinfoIngredienteTres:hover, .btnVerinfoIngredienteCuatro:hover, .btnVerinfoIngredienteCisco:hover{
+font-size: 1.4rem;
+color: #fff;
+font-weight: 700;
+}
+
+
+.preparacionReceta-sectionTres{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+.img-sectionTres{
+    width: 100%;
+    height: auto;   
+}
+.hijo-prepararReceta-sectionTres{
+    position: relative;
+}
+.infoPreparacion-sectionTres{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    top: 30px;
+    padding: 10px;
+    background: #EA6E81;
+    border-radius: 5px;
+    right: 10px;
+    border: 1px solid #FC2121;
+}
+.infoPreparacionUno-sectionTres{
+    display: none;
+    z-index: 20;
+}
+.infoPreparacionDos-sectionTres{
+    display: none;
+    z-index: 10;
+}
+.infoPreparacionTres-sectionTres{
+    display: none;
+    z-index: 5;
+}
+.infoPreparacionCuatro-sectionTres{
+display: none;
+}
+.tituloPreparacion-sectionTres{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.parrafosPreparacion-sectionTres{
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.btnCerrarPreparacion{
+    width: auto;
+    background: #0008;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btnVerPreparacion-sectionTres{
+    position: absolute;
+    top: 70%;
+    width: 90%;
+    background: #EA6E81;
+    right: 10px;
+    padding: 10px;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: font-size, color, font-wight, 1s;
+}
+.btnVerPreparacion-sectionTres:hover{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 700;   
+}
+
+
+.publicidadUno{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    background: #EA6E86;
+}
+.contenedor_imagen-publicidadUno{
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-publicidadUno{
+    width: 100%;
+    height: 100%;
+}
+.publicidadDos{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #EA6E86;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor_imagen-publicidadDos{
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-publicidadDos{
+    width: 100%;
+    height: 100%;
+}
+.publicidadTres{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.contenedor-publicidadTres{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr))
+}
+.imgUno-publicidadTres{
+    width: 100%;
+}
+
+
+.il-opcionDos, .il-opcionTres{
+    display: none;
+}
+
+
+
+
+
+
+
+
+

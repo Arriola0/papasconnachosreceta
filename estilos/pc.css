@@ -1,0 +1,24 @@
+.contenedor_imagenes-sectionMuestrario{
+    height: 350px;
+}
+.contenedorIndividual_imagnes-sectionMuestrario{
+    padding: 30px;
+}
+.img-secionEscogerImagen{
+    width: 30%;
+}
+.img-sectionMuestrario{
+    width: 50%;
+}
+.titulo-sectionMuestrario{
+    font-size: 2.8rem;
+}
+.titulo-sectionUno, .titulo-sectionDos, .titulo-sectionTres{
+    font-size: 2.8rem;
+}
+.il-opciones{
+    font-size: 2.4rem;
+}
+.il-opciones:hover{
+font-size: 2.5rem;
+}
